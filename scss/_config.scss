@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+$pry-color: #02e2aa;
+
+a {
+    text-decoration: none;
+    // display: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    // border: 1px solid;
+    padding: 1rem;
+
+    li {
+        display: inline;
+        margin-right: .8rem;
+        cursor: pointer;
+        padding: .2rem 0;
+        font-family: Consolas;
+        
+        &:hover{
+            border-bottom: 1px solid $pry-color;
+        }
+    }
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    overflow: hidden;
+}
