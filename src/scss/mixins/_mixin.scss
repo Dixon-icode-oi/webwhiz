@@ -1,0 +1,108 @@
+@mixin index{
+    @media only screen and (max-width: 600px) {
+        *{
+            overflow-x: hidden;
+            overflow-y: auto;
+            // color: red;
+        }
+        header{
+            .fixed{
+                width: 100%;
+                background-color: #0f0f0f;
+                position: fixed;
+                top: 0;
+                z-index: 1;
+            }
+            .header{
+                height: 80px;
+                transition: .3s ease;
+                .navbar{
+                    .logo{
+                        margin-left: -1rem;
+                        top: -2%;
+                        img{width: 95px;}
+                    }
+                    .nav-links{
+                        float: left;
+                        position: absolute;
+                        left: 0%;
+                        height: 0px;
+                        width: 100%;
+                    
+                        ul .tablinks{
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                    button{
+                        display: block;   
+                    }
+                }
+            }
+            .show{
+            height: 250px;
+            .navbar {
+                button{
+                    top: 3%;
+                    color: red;
+                }
+                .nav-links{
+                    height: 200px;
+                    top: 24%;
+                }
+            }
+        }
+        }
+        main .main-content{
+            .showcase{
+                width: 100%;
+                flex-direction: column;
+                // margin-top: 4rem;
+                .text{
+                    width: 100%;
+                }
+                .profile{
+                    position: relative;
+                    width: 100%;
+                    design img{
+                        margin-top: 0;
+                    }
+                    .prf-img{
+                        top: -5%;
+                        width: 100%;
+                    }
+                }
+            }
+            #Skills{
+                margin-top: 4rem;
+                h2{
+                    margin-top: 7rem;
+                }
+                .tech-stack{
+                    flex-direction: column;
+                }
+                button{
+                    margin-bottom: 2rem;
+                }
+            }
+            #Projects{
+                margin-top: 4rem;
+                .projects_container .row .col-3{
+                    width: 100%;
+                    height: 154px;
+                    .div-content img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            #Contact{
+                margin-top: 4rem;
+                .contact-info .social-handles {
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+}
